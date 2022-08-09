@@ -1,4 +1,8 @@
 # ClusteringForTargetMarketing
+
+# Problem Description 
+Based on the data collected from a range of customers, we want to strategically organise marketing campaigns based on previous customer ratings and their financial status. 
+
 ```python 
 import pandas as pd
 import numpy as np
@@ -8,7 +12,10 @@ import os
 # Importing the dataset
 dataset = pd.read_csv('Mall_Customers.csv')
 X = dataset.iloc[:, [3,4]].values
+```
+![My Image](dataset.png)
 
+```pythob
 # Finding an optimal number of clusters using elbow method
 from sklearn.cluster import KMeans
 wcss = []
